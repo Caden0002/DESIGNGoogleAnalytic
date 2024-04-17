@@ -8,6 +8,14 @@ ReactGA.initialize("G-27JWP98W69");
 
 ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
 
+export default function trackButtonClick(buttonName) {
+    ReactGA.event({
+        category: 'Button Click',
+        action: 'Clicked',
+        label: buttonName
+    });
+};
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
