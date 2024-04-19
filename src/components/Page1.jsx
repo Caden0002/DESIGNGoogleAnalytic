@@ -1,11 +1,10 @@
 // Page1.jsx
 import trackButtonClick from '../main.jsx';
 
-const background = "bg-backgroundColorPrimary";
 
 function Page1(props) {
     return (
-        <div className={`relative min-h-screen flex ${background}`}>
+        <div className={`relative min-h-screen flex bg-stone-200`}>
             <div className="container max-w-screen-xl mx-auto flex flex-col justify-center items-center text-4xl ">
 
                 <div className="mb-4">
